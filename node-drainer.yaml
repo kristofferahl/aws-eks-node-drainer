@@ -43,7 +43,7 @@ metadata:
   name: node-drainer
   namespace: kube-system
   labels:
-    k8s-app: node-drainer
+    app.kubernetes.io/name: node-drainer
 data:
   AWS_REGION: <your region>
   LIFECYCLED_SNS_TOPIC: <your sns topic>
@@ -71,7 +71,7 @@ spec:
   template:
     metadata:
       labels:
-        k8s-app: node-drainer
+        app.kubernetes.io/name: node-drainer
       name: node-drainer
       namespace: node-drainer
     spec:
