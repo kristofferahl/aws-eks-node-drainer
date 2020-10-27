@@ -82,7 +82,7 @@ spec:
           effect: NoSchedule
       containers:
         - name: node-drainer
-          image: kristofferahl/eks-node-drainer:1.0.0
+          image: kristofferahl/eks-node-drainer:v1.0.0
           imagePullPolicy: Always
           command:
             - /usr/bin/lifecycled
